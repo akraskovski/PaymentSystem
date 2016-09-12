@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<head>
+    <title>JSF Tutorial!</title>
+</head>
+<h:body>
+    <h:form>
+        <h3 align="center">Select user</h3>
+        <h:selectOneMenu value="#{data.data}">
+            <f:selectItem itemValue="admin" itemLabel="Admin" />
+            <f:selectItem itemValue="index" itemLabel="Main" />
+            <f:selectItem itemValue="status" itemLabel="Primefaces" />
+        </h:selectOneMenu>
+        <h:commandButton value="Submit" action= "#{data.moveToSomePage}" />
+    </h:form>
+    <br/>
+</h:body>
+</html>
