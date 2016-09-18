@@ -1,5 +1,7 @@
 package com.kraskovskij;
 
+import com.kraskovskij.model.entity.CreditCard;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +18,7 @@ public class Data implements Serializable {
     public int id;
     public String data;
     public CreditCard card = new CreditCard();
+
     public String moveToSomePage(){
         return data;
     }

@@ -1,5 +1,7 @@
 package com.kraskovskij;
 
+import com.kraskovskij.model.entity.CreditCard;
+
 public class User {
 
     private String USERNAME;

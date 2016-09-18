@@ -18,22 +18,22 @@
                 <h:outputText value="Card infrormation"/>
             </f:facet>
             <h:outputLabel for="id" value="ID"/>
-            <h:outputText id="id" value="#{cardBean.card.id}"/>
+            <h:outputText id="id" value="#{creditCardController.card.id}"/>
             <h:outputLabel for="number" value="NUMBER"/>
-            <h:inputText id="number" value="#{cardBean.card.number}"/>
+            <h:inputText id="number" value="#{creditCardController.card.number}"/>
             <h:outputLabel for="pin" value="PIN"/>
-            <h:outputText id="pin" value="#{cardBean.card.pin}"/>
+            <h:outputText id="pin" value="#{creditCardController.card.pin}"/>
             <h:outputLabel for="owner" value="OWNER"/>
-            <h:inputText id="owner" value="#{cardBean.card.owner}"/>
+            <h:inputText id="owner" value="#{creditCardController.card.owner}"/>
             <h:outputLabel for="cash" value="CASH"/>
-            <h:inputText id="cash" value="#{cardBean.card.cash}"/>
+            <h:inputText id="cash" value="#{creditCardController.card.cash}"/>
             <h:outputText id="status" value="Status"/>
-            <h:selectOneMenu for="status" value="#{cardBean.card.status}">
+            <h:selectOneMenu for="status" value="#{creditCardController.card.status}">
                 <f:selectItem itemValue="true" itemLabel="Activated"/>
                 <f:selectItem itemValue="false" itemLabel="Locked"/>
             </h:selectOneMenu>
             <h:commandButton value="Home" action="index"/>
-            <h:commandButton value="Save" action="#{cardBean.setOneCardToDB(cardBean.card)}"/>
+            <h:commandButton value="Save" action="#{creditCardController.setOneCardToDB}"/>
         </h:panelGrid>
     </h:form>
 </h:body>

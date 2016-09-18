@@ -5,7 +5,8 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html">
 <head>
-    <title>JSF Tutorial!</title>
+    <title>Main page</title>
+    <h:outputStylesheet library="css" name="buttons.css"  />
 </head>
 <h:body>
     <h:form>
@@ -14,7 +15,7 @@
             <f:selectItem itemValue="admin" itemLabel="Admin" />
             <f:selectItem itemValue="index" itemLabel="Main" />
         </h:selectOneMenu>
-        <h:commandButton value="Submit" action= "#{data.moveToSomePage}" />
+        <h:commandButton value="Submit" styleClass="avesettings" action= "#{data.moveToSomePage}" />
     </h:form>
     <br/>
 </h:body>

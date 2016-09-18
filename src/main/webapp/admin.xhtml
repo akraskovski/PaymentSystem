@@ -15,7 +15,7 @@
     <h:outputLabel>Here you can see all cards in system</h:outputLabel>
     <br/>
 
-    <h:dataTable value="#{cardBean.creditCardList}" var="c"
+    <h:dataTable value="#{creditCardController.cards}" var="c"
                  styleClass="order-table"
                  headerClass="order-table-header"
                  rowClasses="order-table-odd-row,order-table-even-row"
@@ -32,7 +32,7 @@
             <f:facet name="header">
                 Number
             </f:facet>
-            <h:commandLink value="#{c.number}" action="#{cardBean.findByNumber(c)}"/>
+            <h:commandLink value="#{c.number}" action="#{creditCardController.findByNum(c)}"/>
         </h:column>
 
         <h:column>
